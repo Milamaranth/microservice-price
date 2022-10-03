@@ -1,0 +1,8 @@
+server:
+    port: ${port:8081}
+spring:
+    application:
+        name: price-service
+    config:
+        import: "optional:configserver:"
+    jpa.hibernate.ddl-auto: update
